@@ -1,0 +1,79 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #D8C8E6;
+    color: #432000;
+    user-select: none; /*to avoid selecting the image/text*/
+}
+
+.container {
+    display: flex; /*this property tells the container to be a flexible layout, it helps to control the things inside it*/
+    flex-direction: column; /*Put the things inside the box on top of each other, like a stack of books, one under the other*/
+    border-radius: 15px;
+    border: 5px solid #000;
+    /*background-color: #FFFFF0;*/
+   /* background-color: #F0E1FF;*/
+    background-color: rgb(239, 239, 239);
+    padding: 15px;
+    max-width: 320px; /*the side horizontal width is set to 320px*/
+    margin: 30px auto; /*centering the container horizontally*/
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: solid black;
+    background-color: #FFFACD;
+    border: 3px solid #000; /* Add a 3px solid black border */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0; /*only 10px means adding it on all sides, 0 means no margin is added on left and right side*/
+}
+
+button {
+    color: solid black;
+    background-color: #d61c12;
+    border: 3px solid #000; /* Add a 3px solid black border */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style-type: none; /*removing the bullet points for the listed items*/
+    padding: 0; /*getting rid of the space between the items*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /*gving some gap between the items*/
+}
+
+ul li {
+    font-size: 20px;
+    background-color: #FFC966;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    flex-grow: 1; /*so that the item stretches for the entire width*/
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+/*adding hover effects*/
+button:hover{
+    background-color: #803915;
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: rgb(225, 105, 20);
+    cursor: pointer;
+}
